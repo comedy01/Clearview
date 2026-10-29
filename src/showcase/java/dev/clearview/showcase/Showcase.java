@@ -193,10 +193,6 @@ public final class Showcase {
         });
     }
 
-    /**
-     * Films every moment twice, first with Clear View switched off and then with the scene's settings, without
-     * advancing the game clock in between, so the two clips show exactly the same moment side by side.
-     */
     private void record(String name, int frames, Consumer<ClearViewConfig> look, IntConsumer script) {
         ClearViewConfig config = ClearViewClient.config();
         Path clips = out.resolve("clips");
@@ -525,8 +521,6 @@ public final class Showcase {
         IntegratedServer server = mc.getSingleplayerServer();
         server.execute(() -> server.getPlayerList().getPlayers().forEach(p -> p.setTicksFrozen(p.getTicksRequiredToFreeze() + 2)));
     }
-
-    // Finding the sets, on the server thread.
 
     private static Spots locate(IntegratedServer server) {
         ServerLevel world = server.overworld();
