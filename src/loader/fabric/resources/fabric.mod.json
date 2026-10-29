@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "clearview",
+	"version": "${version}",
+	"name": "Clear View",
+	"description": "Removes the things that block your view. Lowers the fire overlay and your shield, hides the pumpkin and frost overlays, clears the fog in lava, water and powder snow, and adds a fullbright toggle. Client-side only.",
+	"icon": {
+		"16": "assets/clearview/icon16.png",
+		"32": "assets/clearview/icon32.png",
+		"128": "assets/clearview/icon128.png"
+	},
+	"authors": [
+		"comedy01"
+	],
+	"license": "MIT",
+	"contact": {
+		"homepage": "https://github.com/comedy01/Clear-View",
+		"sources": "https://github.com/comedy01/Clear-View",
+		"issues": "https://github.com/comedy01/Clear-View/issues"
+	},
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.clearview.fabric.ClearViewFabric"
+		],
+		"modmenu": [
+			"dev.clearview.fabric.ClearViewModMenu"
+		]
+	},
+	"mixins": [
+		"clearview.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "${range}",
+		"java": ">=${java_version}",
+		"${key_module}": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

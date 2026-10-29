@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.clearview.mixin",
+	"compatibilityLevel": "JAVA_${java_version}",
+	"client": [
+		"ArmMixin",
+		"DistanceFogMixin",
+		"FireMixin",
+		"FogMixin",
+		"MinecraftMixin",
+		"OptionInstanceAccessor",
+		"OptionsMixin",
+		"OverlayMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

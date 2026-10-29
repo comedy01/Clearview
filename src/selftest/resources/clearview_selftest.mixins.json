@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.clearview.selftest.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"MinecraftFrameMixin",
+		"RuntimeProbeMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

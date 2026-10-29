@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+issueTrackerURL="https://github.com/comedy01/Clear-View/issues"
+
+[[mods]]
+modId="clearview"
+version="${version}"
+displayName="Clear View"
+displayURL="https://github.com/comedy01/Clear-View"
+iconFile="assets/clearview/icon128.png"
+authors="comedy01"
+description='''Removes the things that block your view. Lowers the fire overlay and your shield, hides the pumpkin and frost overlays, clears the fog in lava, water and powder snow, and adds a fullbright toggle. Client-side only.'''
+
+[[mixins]]
+config="clearview.mixins.json"
+
+[[dependencies.clearview]]
+modId="neoforge"
+type="required"
+versionRange="${neoforge_range}"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.clearview]]
+modId="minecraft"
+type="required"
+versionRange="${mc_range}"
+ordering="NONE"
+side="CLIENT"

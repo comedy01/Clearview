@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "clearview-selftest",
+	"version": "1.0.0",
+	"name": "Clear View self test",
+	"description": "Development-only in-world checks for Clear View. Not shipped.",
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.clearview.selftest.fabric.ClearViewSelfTestFabric"
+		]
+	},
+	"depends": {
+		"clearview": "*"
+	},
+	"mixins": [
+		"clearview_selftest.mixins.json"
+	]
+}
